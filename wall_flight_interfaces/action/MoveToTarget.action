@@ -1,0 +1,17 @@
+# Goal
+string goal_type  # TODO make this an enum
+float64 height
+geometry_msgs/Point target_position
+geometry_msgs/Quaternion target_orientation  # Optional
+float64 position_tolerance
+float64 orientation_tolerance  # Optional
+float64 max_speed
+
+---
+# Result
+geometry_msgs/Point reached_position
+
+---
+# Feedback (optional)
+geometry_msgs/Point current_position
+float64 distance_to_target
